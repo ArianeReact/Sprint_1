@@ -1,0 +1,18 @@
+@media only screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+    .section.blackContent{
+        background-color: #fff734;
+    }
+    #contentLeft{
+        margin-right: 0px;
+    }
+    #logo{
+        flex: 0 1 80px;
+    }
+    #socialLinks {
+        flex: 0 1 80px;
+    }
+}
+
