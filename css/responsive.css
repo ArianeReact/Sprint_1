@@ -2,56 +2,116 @@
     section {
         flex-direction: column;
     }
-    .section.blackContent{
-        background-color: #fff734;
-    }
-    #contentLeft{
+
+    #contentLeft {
         margin-right: 0px;
     }
-    #logo{
+
+    #logo {
         flex: 0 1 80px;
     }
+
     #socialLinks {
         flex: 0 1 80px;
+        gap: 10px;
     }
+
+    #titleSlide h1 {
+        font-size: 25px;
+    }
+
+    .menuItem a {
+        font-size: 13px;
+    }
+
+    .menuItem i {
+        margin-right: 5px;
+    }
+
+
 }
 
 @media only screen and (max-width: 480px) {
     :root {
-        --gap: 30px;
-        --padding:15px;
+        --gap: 20px;
+        --padding: 15px;
     }
-    section{
-        gap:var(--gap);
+
+    section {
+        gap: var(--gap);
     }
-    #navBar{
+
+    .header {
+        background-size: 100%;
+        height: auto;
+    }
+
+    #navBar {
         flex-direction: column;
-        gap:var(--gap);
+        gap: var(--gap);
     }
-    #navBar >*{
+
+    #navBar>* {
         flex: 1 1 100%;
         margin: 0px !important;
     }
-    #contentLeft{
-        background-color:#004763;
+
+    #menu {
+        padding: 0px 20px;
     }
-    #contentArticles>article{
+
+    #slide {
+        margin: 20px 20px 0px 20px;
+        height: 70px;
+    }
+
+    #titleSlide h1 {
+        font-size: 20px;
+    }
+
+    .menuItem {
+        text-align: center;
+    }
+
+    .menuItem a {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .menuItem i {
+        margin-right: 5px;
+    }
+
+    .socialItem a {
+        font-size: 20px;
+    }
+
+    #contentLeft {
+        background-color: #004763;
+    }
+
+    #contentArticles>article {
         flex: 1 1 100%;
         background-color: #558991;
     }
-    #footerArticles{
-        background-color:#97d4c5;
+
+    #footerArticles {
+        background-color: #97d4c5;
     }
-    #contentRight{
+
+    #contentRight {
         background-color: #ff784c;
     }
-    #contentRight #titleContentRight{
+
+    #contentRight #titleContentRight {
         background-color: #ffab64;
     }
-    #contentRight #textContentRight{
+
+    #contentRight #textContentRight {
         background-color: #ffab64;
     }
-    #contentFooter{
+
+    #contentFooter {
         background-color: #ffbf60;
     }
 }
