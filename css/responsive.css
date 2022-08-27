@@ -86,32 +86,14 @@
         font-size: 20px;
     }
 
-    #contentLeft {
-        background-color: #004763;
-    }
+   
 
     #contentArticles>article {
         flex: 1 1 100%;
-        background-color: #558991;
+
     }
 
-    #footerArticles {
-        background-color: #97d4c5;
-    }
 
-    #contentRight {
-        background-color: #ff784c;
-    }
 
-    #contentRight #titleContentRight {
-        background-color: #ffab64;
-    }
 
-    #contentRight #textContentRight {
-        background-color: #ffab64;
-    }
-
-    #contentFooter {
-        background-color: #ffbf60;
-    }
 }

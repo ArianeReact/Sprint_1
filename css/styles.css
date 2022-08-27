@@ -131,16 +131,14 @@ header {
 section {
     display: flex;
     flex-direction: row;
-    gap: var(--gap);
+    gap: var(--padding);
 }
 
 /* SECTION - contentLeft*/
 #contentLeft {
-    background-color: #45455e;
-    padding: var(--gap);
-    flex: 2;
-
-
+    background-color: #d8d7d7;
+    padding: var(--padding);
+    flex: 3;
 }
 
 #contentArticles {
@@ -151,43 +149,76 @@ section {
     margin-bottom: var(--gap);
 }
 
-#contentArticles>article {
+article {
     flex: 1 1 calc(50% - var(--gap));
     padding: var(--padding);
-    background-color: #2261a3;
+    background-color: white;
+}
 
+article .imageContent {
+    position: relative;
+}
+
+.imageContent img {
+    width: 100%;
+}
+
+.imageContent h3 {
+    position: absolute;
+    bottom: 0px;
+    color: #edde94;
+    font-size: 12px;
+    padding: 5px;
+}
+
+article .textContent h2 {
+    background-color: #f08080;
+    text-transform: uppercase;
+    color: white;
+    padding: 5px;
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+article .textContent p {
+    column-count: 2;
+    column-gap: 20px;
+    padding: 20px 0px;
+}
+
+article .textContent a {
+    text-decoration: none;
+    color: #808080;
 }
 
 #footerArticles {
-    background-color: #6899ba;
-    padding: var(--padding);
+    text-align: center;
 
 }
 
 /* SECTION - contentRight*/
 #contentRight {
-    background-color: #f23c4d;
-    padding: var(--gap);
+    background-color: #d8d7d7;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     flex: 1;
+    text-align: center;
+    color: black;
 }
 
 #contentRight>#titleContentRight {
-    background-color: #fde682;
-    padding: var(--padding);
-    margin-bottom: var(--padding);
+    margin-bottom: 25px;
+
 }
 
-#contentRight>#textContentRight {
-    background-color: #fde682;
-    padding: var(--padding);
-}
+
 
 /* FOOTER - fill de body*/
 
 
 #contentFooter {
-    background-color: #e0a539;
-    padding: var(--padding);
+    background-color: #f5f1f1;
+    text-align: center;
+    padding: 15px;
 }
