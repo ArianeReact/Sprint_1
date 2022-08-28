@@ -13,9 +13,9 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-rows: 30vw auto auto;
+    grid-gap: var(--padding);
     color: #808080;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
@@ -26,24 +26,23 @@ body {
 header {
     background: url("../images/header1.jpg") 50% 100% no-repeat;
     background-size: cover;
-    height: 30vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    max-height: 400px;
+    display: grid;
+    grid-template-rows: 135px auto 135px;
     animation: opacity 1s ease-in;
 
 }
 
+
 #navBar {
-    display: flex;
-    gap: var(--gap);
+    display: grid;
+    grid-template-columns: 160px auto 160px;
+    grid-gap: var(--gap);
     align-items: center;
     animation: moureBaix 1s ease-in;
 }
 
 #logo {
-    flex: 0 1 160px;
+
     text-align: center;
 }
 
@@ -52,10 +51,9 @@ header {
 }
 
 #socialLinks {
-    flex: 0 1 160px;
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
     justify-content: center;
     list-style: none;
     align-items: center;
@@ -73,9 +71,9 @@ header {
 }
 
 #menu {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: row;
+
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: space-around;
     list-style: none;
     align-items: center;
@@ -114,7 +112,8 @@ header {
     text-align: center;
     background-color: rgba(128, 128, 128, 0.1);
     height: 135px;
-    display: flex;
+    grid-row-start: 3;
+    display: grid;
     align-items: center;
     justify-content: center;
     margin: 0px 70px;
@@ -133,9 +132,9 @@ header {
 /* SECTION - fill de body*/
 
 section {
-    display: flex;
-    flex-direction: row;
-    gap: var(--padding);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: var(--padding);
 
 }
 
@@ -143,20 +142,19 @@ section {
 #contentLeft {
     background-color: #d8d7d7;
     padding: var(--padding);
-    flex: 3;
+
     animation: moureDreta 1s ease-in;
 }
 
 #contentArticles {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--gap);
+    display: grid;
+    grid-gap: var(--gap);
+    grid-template-columns: auto auto;
     margin-bottom: var(--gap);
 }
 
 article {
-    flex: 1 1 calc(50% - var(--gap));
+
     padding: var(--padding);
     background-color: white;
 
@@ -207,9 +205,8 @@ article .textContent a {
 #contentRight {
     background-color: #d8d7d7;
     padding: 25px;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+    display: grid;
+    grid-template-rows: 50px auto;
     text-align: center;
     color: black;
     animation: moureEsquerra 1s ease-in;

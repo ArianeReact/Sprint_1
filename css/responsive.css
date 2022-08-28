@@ -1,19 +1,19 @@
 @media only screen and (max-width: 768px) {
     section {
-        flex-direction: column;
+        grid-template-columns: auto;
     }
 
     #contentLeft {
         margin-right: 0px;
     }
 
-    #logo {
-        flex: 0 1 80px;
+    #navBar {
+        grid-template-columns: 80px auto 80px;
+        grid-gap: 10px;
     }
 
     #socialLinks {
-        flex: 0 1 80px;
-        gap: 10px;
+        grid-gap: 10px;
     }
 
     #titleSlide h1 {
@@ -28,6 +28,14 @@
         margin-right: 5px;
     }
 
+    header {
+        grid-template-rows: 80px auto auto;
+    }
+
+    #slide {
+        height: auto;
+    }
+
 
 }
 
@@ -37,18 +45,25 @@
         --padding: 15px;
     }
 
-    section {
-        gap: var(--gap);
+    body {
+        grid-template-rows: auto auto auto;
     }
+
+
 
     .header {
         background-size: 100%;
         height: auto;
+        grid-template-rows: 135px auto auto;
+    }
+
+    #slide {
+        height: auto;
     }
 
     #navBar {
-        flex-direction: column;
-        gap: var(--gap);
+        grid-template-columns: auto;
+
     }
 
     #navBar>* {
@@ -86,11 +101,8 @@
         font-size: 20px;
     }
 
-   
-
-    #contentArticles>article {
-        flex: 1 1 100%;
-
+    #contentArticles {
+        grid-template-columns: auto;
     }
 
 
