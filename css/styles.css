@@ -80,7 +80,9 @@ header {
     width: 100%;
 }
 
-
+.menuItem:hover {
+    animation: moureDaltPetit 0.5s ease-in;
+}
 .menuItem i {
     margin-right: 10px;
 }
@@ -104,7 +106,6 @@ header {
     color: #f08080;
     background-color: rgba(128, 128, 128, 0.1);
     background-size: 100%;
-
 }
 
 
@@ -194,6 +195,12 @@ article .textContent p {
 article .textContent a {
     text-decoration: none;
     color: #808080;
+    display: block;
+}
+article .textContent a:hover {
+    color: #f08080;
+    animation: moureEsquerraPetit 0.5s ease-in;
+    
 }
 
 #footerArticles {
@@ -255,6 +262,16 @@ article .textContent a {
     }
 }
 
+@keyframes moureDaltPetit {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
 @keyframes moureEsquerra {
     0% {
         opacity: 0;
@@ -275,6 +292,15 @@ article .textContent a {
 
     100% {
         opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes moureEsquerraPetit{
+    0% {
+        transform: translateX(10px);
+    }
+
+    100% {
         transform: translateX(0px);
     }
 }
