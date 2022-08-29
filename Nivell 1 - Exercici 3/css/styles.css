@@ -1,0 +1,137 @@
+:root {
+    --gap: 20px;
+    --padding:10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+
+
+/* HEADER - fill de body*/
+header {
+    flex: 1 0 100%;
+    display: flex;
+    flex-direction: column;
+    gap:var(--gap);
+}
+
+#navBar {
+    background-color: #28384d;
+    gap: var(--gap);
+    display: flex;
+    padding: var(--gap);
+}
+
+#logo {
+    flex: 0 1 160px;
+
+}
+
+#socialLinks {
+    flex: 0 1 160px;
+}
+
+#navBar>#menu {
+    
+    flex-basis: auto;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+#hero {
+    background-color: #ea7140;
+    padding: var(--gap);
+}
+
+#imgHero {
+    background-color: #fbce61;
+    padding: var(--padding);
+}
+
+/* SECTION - fill de body*/
+
+section {
+    display: flex;
+    flex-direction: row;
+    gap:var(--gap);
+}
+
+/* SECTION - contentLeft*/
+#contentLeft {
+    background-color: #45455e;
+    padding: var(--gap);
+    flex: 2;
+    
+    
+}
+
+#contentArticles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+#contentArticles>article {
+    flex: 1 1 calc(50% - var(--gap));
+    padding: var(--padding);
+    background-color: #2261a3;
+
+}
+#footerArticles {
+    background-color: #6899ba;
+    padding: var(--padding);
+    
+}
+
+/* SECTION - contentRight*/
+#contentRight {
+    background-color: #f23c4d;
+    padding: var(--gap);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#contentRight>#titleContentRight {
+    background-color: #fde682;
+    padding: var(--padding);
+    margin-bottom: var(--padding);
+}
+
+#contentRight>#textContentRight {
+    background-color: #fde682;
+    padding: var(--padding);
+}
+
+/* FOOTER - fill de body*/
+
+
+#contentFooter {
+    background-color: #e0a539;
+    padding: var(--padding);
+}
+
+.blackContent {
+    background-color: black;
+    padding: var(--gap);
+    margin-bottom: var(--gap);
+}
+
+.redContent {
+    background-color: #e34d4f;
+    padding: var(--padding);
+}
